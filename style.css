@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: linear-gradient(135deg, #00695c, #004d40);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.header .slogan {
+    color: #b2dfdb;
+    font-size: 0.9rem;
+}
+
+.nav {
+    background-color: #004d40;
+    padding: 12px 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.nav a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #00695c;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #004d40;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #00695c;
+    color: #00695c;
+}
+
+.btn-outline:hover {
+    background-color: #00695c;
+    color: white;
+}
+
+.footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+/* Стили для кнопок аутентификации */
+.nav a.auth-btn {
+    background: rgba(255,255,255,0.2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+.nav a.auth-btn:hover {
+    background: rgba(255,255,255,0.3);
+    text-decoration: none;
+}
+
+.nav a.register-btn {
+    background: #00695c;
+    border: 1px solid #b2dfdb;
+}
+
+.nav a.register-btn:hover {
+    background: #00796b;
+}
+
+.user-menu {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-menu .username {
+    font-weight: 600;
+    color: #b2dfdb;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .nav a {
+        margin: 5px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .nav a.auth-btn {
+        padding: 6px 15px;
+        margin-left: 5px;
+    }
+}
